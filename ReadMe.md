@@ -132,6 +132,7 @@ Response:
 
 Status Codes:
  200 OK, 404 Not Found, 400 Bad Request
+ 
 ---
 
 
@@ -167,6 +168,4 @@ User updates the title, image, description, or other fields by sending a PUT req
 Delete a Nudge
 User deletes a specific nudge by sending a DELETE request to /nudges/{id}.
 
-Conclusion:
-This document provides a detailed overview of the Nudge system API. It outlines how users can create, view, update, and delete nudges associated with events. By using standard HTTP methods (GET, POST, PUT, DELETE), the API is easy to integrate into a larger event-based application.
----
+
