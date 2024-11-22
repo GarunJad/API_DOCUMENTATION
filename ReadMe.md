@@ -145,7 +145,7 @@ Method: DELETE /nudges/{id}
 Description: Deletes a nudge based on the ID.
 Response:
 ```json
-Copy code
+
 {
   "message": "Nudge deleted successfully",
   "nudge_id": "ObjectId"
