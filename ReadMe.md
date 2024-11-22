@@ -42,12 +42,14 @@ Status Codes:
 201 Created, 400 Bad Request
 
 ---
+
 ### 2. Get All Nudges
 Method: GET /nudges
 Description: Retrieves all nudges in the system.
 Query Parameters:
 page: Optional, default: 1
 limit: Optional, default: 10
+
 ---
 Response:
 ```json
@@ -96,7 +98,7 @@ Response:
 ```
 
 Status Codes:
- 200 OK, 404 Not Found
+200 OK, 404 Not Found
 
 ---
 
@@ -132,7 +134,7 @@ Response:
 
 Status Codes:
  200 OK, 404 Not Found, 400 Bad Request
- 
+
 ---
 
 
