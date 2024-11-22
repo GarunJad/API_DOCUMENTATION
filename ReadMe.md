@@ -31,25 +31,26 @@ Allows a user to create a new nudge associated with an event.
 ---
 Response:
 ```json
-Copy code
+
 {
   "message": "Nudge created successfully",
   "nudge_id": "ObjectId"
 }
 ```
----
-**Status Codes:**
+
+Status Codes:
 201 Created, 400 Bad Request
 ---
-2. Get All Nudges
+### 2. Get All Nudges
 Method: GET /nudges
 Description: Retrieves all nudges in the system.
 Query Parameters:
 page: Optional, default: 1
 limit: Optional, default: 10
+---
 Response:
 ```json
-Copy code
+
 {
   "nudges": [
     {
@@ -62,21 +63,24 @@ Copy code
       "invitation_text": "Join us for this amazing event!",
       "created_at": "2024-11-20T08:00:00Z"
     },
-    ...
+    
   ]
 }
 ```
----
-**Status Codes:**
+
+Status Codes:
  200 OK, 500 Internal Server Error
 ---
-3. Get a Specific Nudge
+
+### 3. Get a Specific Nudge
 Method: GET /nudges/{id}
 Description: Retrieves a specific nudge by its ID.
 
+---
+
 Response:
 ```json
-Copy code
+
 {
   "event_id": "ObjectId",
   "title": "Sample Nudge Title",
@@ -88,16 +92,20 @@ Copy code
   "created_at": "2024-11-20T08:00:00Z"
 }
 ```
----
-**Status Codes:**
+
+Status Codes:
  200 OK, 404 Not Found
 ---
-4. Update a Nudge
+
+### 4. Update a Nudge
 Method: PUT /nudges/{id}
 Description: Updates an existing nudge.
+
+---
+
 Request Payload:
 ```json
-Copy code
+
 {
   "title": "Updated Nudge Title",
   "image": "updatedImagePath",
@@ -107,21 +115,24 @@ Copy code
   "invitation_text": "Updated invitation text!"
 }
 ```
+
 ---
+
 Response:
 ```json
-Copy code
+
 {
   "message": "Nudge updated successfully",
   "nudge_id": "ObjectId"
 }
 ```
 
----
-**Status Codes:**
+Status Codes:
  200 OK, 404 Not Found, 400 Bad Request
 ---
-5. Delete a Nudge
+
+
+ ### 5. Delete a Nudge
 Method: DELETE /nudges/{id}
 Description: Deletes a nudge based on the ID.
 Response:
@@ -132,8 +143,8 @@ Copy code
   "nudge_id": "ObjectId"
 }
 ```
----
-**Status Codes:**
+
+Status code:
  200 OK, 404 Not Found
 ---
 Example Workflow:
