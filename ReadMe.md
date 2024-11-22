@@ -44,11 +44,13 @@ Status Codes:
 ---
 
 ### 2. Get All Nudges
+
 Method: GET /nudges
 Description: Retrieves all nudges in the system.
 Query Parameters:
 page: Optional, default: 1
 limit: Optional, default: 10
+
 
 ---
 Response:
