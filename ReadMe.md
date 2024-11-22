@@ -40,6 +40,7 @@ Response:
 
 Status Codes:
 201 Created, 400 Bad Request
+
 ---
 ### 2. Get All Nudges
 Method: GET /nudges
@@ -70,6 +71,7 @@ Response:
 
 Status Codes:
  200 OK, 500 Internal Server Error
+
 ---
 
 ### 3. Get a Specific Nudge
@@ -95,6 +97,7 @@ Response:
 
 Status Codes:
  200 OK, 404 Not Found
+
 ---
 
 ### 4. Update a Nudge
@@ -144,8 +147,9 @@ Copy code
 }
 ```
 
-Status code:
+ Status code:
  200 OK, 404 Not Found
+
 ---
 Example Workflow:
 Create a Nudge
